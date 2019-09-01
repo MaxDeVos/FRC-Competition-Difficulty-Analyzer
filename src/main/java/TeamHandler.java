@@ -1,6 +1,7 @@
 import com.cpjd.main.TBA;
 import com.cpjd.models.events.Award;
 import com.cpjd.models.events.AwardRecipient;
+import com.cpjd.utils.exceptions.DataNotFoundException;
 
 public class TeamHandler {
 
@@ -38,8 +39,8 @@ public class TeamHandler {
                 }
             }
         }
-        catch(Exception exception){
-            return 0;
+        catch(DataNotFoundException exception){
+            return -1;
         }
 
         return 0;

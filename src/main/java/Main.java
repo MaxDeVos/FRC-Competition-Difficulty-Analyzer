@@ -8,7 +8,7 @@ public class Main {
 
 
     public static void main(String args[]){
-        String compKey = "wila";
+        String compKey = "mndu2";
         TBA tba = new TBA();
         TBA.setAuthToken("uJvxP1GDDT7O6Y0Ys7xrGhVUdntYErICAtz9uDc74LcpxPFz3vqcpMrHG94MuMPC ");
         TeamHandler handler = new TeamHandler(tba);
