@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+    id 'application'
+
+}
+
+group 'CompScraper'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+
+
+application {
+    mainClassName = 'Main'
+}
+
+
+repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+}
+
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    implementation 'com.github.wdavies973:tba-api-v3:1.0.6'
+    compile group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1'
+}
